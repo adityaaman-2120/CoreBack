@@ -19,7 +19,8 @@ const securityHeaders = [
     : []),
 ];
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Standalone output is for Docker/Cloud Run; Vercel does its own packaging.
+  output: process.env.VERCEL ? undefined : "standalone",
   poweredByHeader: false,
   // Do not auto-generate agent instruction files into the repository.
   agentRules: false,

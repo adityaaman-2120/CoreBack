@@ -1,0 +1,2 @@
+invoice,purchase_line,job,part,memo,memo_line,credit_usd,date,note
+INV-1001,1,JOB-100,ALT-000,CM-0001,1,150.00,2026-02-10,Example row - replace me

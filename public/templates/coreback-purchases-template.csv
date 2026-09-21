@@ -1,0 +1,2 @@
+invoice,purchase_line,job,part,description,deposit_usd,shipped_date
+INV-1001,1,JOB-100,ALT-000,Alternator (example row - replace me),150.00,2026-01-15

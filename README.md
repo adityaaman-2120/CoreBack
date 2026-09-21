@@ -58,7 +58,9 @@ Open the app, create an account, then follow the in-app checklist or the [user g
 
 ## Deploying
 
-`npm run deploy` provisions and deploys Cloud Run + Firebase Hosting + Firestore rules in one idempotent step. Use `node scripts/deploy.mjs --dry-run` to preview. Full instructions, required IAM roles and post-deploy checks are in [docs/deployment.md](docs/deployment.md).
+**Free, no billing:** follow [docs/deployment-free.md](docs/deployment-free.md) (Vercel Hobby + Firebase Spark).
+
+**Google Cloud (Cloud Run, needs the Blaze plan):** `npm run deploy` provisions and deploys Cloud Run + Firebase Hosting + Firestore rules in one idempotent step. Use `node scripts/deploy.mjs --dry-run` to preview. Full instructions, required IAM roles and post-deploy checks are in [docs/deployment.md](docs/deployment.md).
 
 ## Project layout
 

@@ -22,6 +22,15 @@ const nextConfig: NextConfig = {
   // Standalone output is for Docker/Cloud Run; Vercel does its own packaging.
   output: process.env.VERCEL ? undefined : "standalone",
   poweredByHeader: false,
+  // Load the Google/Firebase server libraries from node_modules at runtime
+  // instead of bundling them (avoids missing-file crashes on serverless hosts).
+  serverExternalPackages: [
+    "firebase-admin",
+    "@google-cloud/firestore",
+    "google-gax",
+    "@grpc/grpc-js",
+    "protobufjs",
+  ],
   // Do not auto-generate agent instruction files into the repository.
   agentRules: false,
   async headers() {
